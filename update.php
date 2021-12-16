@@ -23,7 +23,7 @@ if(isset($_POST['submit'])){
 
 
     // $sql = "insert into 'Doctors'(Name,ID,Mobile,Salary) values('$Name','$ID','$Mobile','$Salary')";
-    $sql = "update `Patient_Doctor` set  `Doc_Id` = $Doc_Id,`Appointment` ='$Appointment',`Charge` =$Charge,`Paid_Amount` =$Paid_Amount where `Patient_Id` = 1";
+    $sql = "update `Patient_Doctor` set  `Doc_Id` = $Doc_Id,`Appointment` ='$Appointment',`Charge` =$Charge,`Paid_Amount` =$Paid_Amount where `Patient_Id` = $Patient_Id";
     $result = mysqli_query($con,$sql);
     if($result){
 
